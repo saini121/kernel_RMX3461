@@ -20,9 +20,9 @@ jobs:
       env:
         NAME: Loganysl
       with:
-        arch: arm64/arm32
-        compiler: compiler_version
-        defconfig: your_defconfig
+        arch: arm64
+        compiler: gcc/12
+        defconfig: gki_defconfig
         image: Image.gz-dtb
 
     - name: Upload Kernel and Module
